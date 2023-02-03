@@ -26,7 +26,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="bodemformaat" class="form-label">Bodemformaat</label>
+                <label for="bodemformaat" class="form-label">Saus</label>
 
                 <select name="bodemformaat" id="bodemformaat" class="form-control">
                     <option>Maak je keuze</option>
@@ -54,7 +54,33 @@
                 </div>
             </div>
 
-            <button class="btn btn-primary">Bestel</button>
+            <div class="mb-3">
+                <div class="form-label">Kruiden</div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="peterselie" id="peterselie">
+                    <label class="form-check-label" for="peterselie"> Peterselie</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="oregano" id="oregano">
+                    <label class="form-check-label" for="oregano"> Oregano</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="chili-flakes" id="chili-flakes">
+                    <label class="form-check-label" for="chili-flakes"> Chili flakes</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="zwarte-peper" id="zwarte-peper">
+                    <label class="form-check-label" for="zwarte-peper"> Zwarte peper</label>
+                </div>
+            </div>
+
+            <div class="d-grid">
+                <button class="btn btn-primary">Bestel</button>
+            </div>
         </form>
     </div>
 
