@@ -1,4 +1,9 @@
 <?php
+
+require_once "database.php";
+
+$stmt = $pdo->query("SELECT * from pizza");
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,6 +17,31 @@
 
 <body>
     <div class="container">
+        <h1 class="text-center">Maak je eigen pizza</h1>
+        <a href="create.php">Create</a>
+
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Bodemformaat</th>
+                <th>Saus</th>
+                <th>Pizzatopping</th>
+                <th>Kruiden</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <?php while ($row = $stmt->fetch()) : ?>
+                <tr>
+                    <td><?= htmlspecialchars($row["id"]) ?></td>
+                    <td><?= htmlspecialchars($row["bodemformaat"]) ?></td>
+                    <td><?= htmlspecialchars($row["saus"]) ?></td>
+                    <td><?= htmlspecialchars($row["pizzatopping"]) ?></td>
+                    <td><?= htmlspecialchars($row["kruiden"]) ?></td>
+                    <td><a href="update.php?id=<?= $row["id"] ?>">Update</a></td>
+                    <td><a href="delete.php?id=<?= $row["id"] ?>">Delete</a></td>
+                </tr>
+            <?php endwhile ?>
+        </table>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
