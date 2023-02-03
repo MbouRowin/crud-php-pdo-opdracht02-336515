@@ -11,38 +11,52 @@
 </head>
 
 <body>
-    <h1 class="text-center">Maak je eigen pizza</h1>
+    <div class="container">
+        <h1 class="text-center">Maak je eigen pizza</h1>
 
-    <form method="post">
-        <label for="bodemformaat">Bodemformaat</label>
+        <form method="post">
+            <div class="mb-3">
+                <label for="bodemformaat" class="form-label">Bodemformaat</label>
 
-        <select name="bodemformaat" id="bodemformaat">
-            <option>Maak je keuze</option>
-            <option value="25">25 cm</option>
-            <option value="30">30 cm</option>
-        </select>
+                <select name="bodemformaat" id="bodemformaat" class="form-control">
+                    <option>Maak je keuze</option>
+                    <option value="25">25 cm</option>
+                    <option value="30">30 cm</option>
+                </select>
+            </div>
 
-        <label for="bodemformaat">Bodemformaat</label>
+            <div class="mb-3">
+                <label for="bodemformaat" class="form-label">Bodemformaat</label>
 
-        <select name="bodemformaat" id="bodemformaat">
-            <option>Maak je keuze</option>
-            <option value="25">25 cm</option>
-            <option value="30">30 cm</option>
-        </select>
+                <select name="bodemformaat" id="bodemformaat" class="form-control">
+                    <option>Maak je keuze</option>
+                    <option value="25">25 cm</option>
+                    <option value="30">30 cm</option>
+                </select>
+            </div>
 
-        <div>Pizzatoppings</div>
+            <div class="mb-3">
+                <div class="form-label">Pizzatoppings</div>
 
-        <input class="form-check-input" type="radio" name="pizzatoppings" id="vegan">
-        <label class="form-check-label" for="vegan"> Vegan</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizzatoppings" id="vegan">
+                    <label class="form-check-label" for="vegan"> Vegan</label>
+                </div>
 
-        <input class="form-check-input" type="radio" name="pizzatoppings" id="vegetarisch">
-        <label class="form-check-label" for="vegetarisch"> Vegetarisch</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizzatoppings" id="vegetarisch">
+                    <label class="form-check-label" for="vegetarisch"> Vegetarisch</label>
+                </div>
 
-        <input class="form-check-input" type="radio" name="pizzatoppings" id="vlees">
-        <label class="form-check-label" for="vlees"> Vlees</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pizzatoppings" id="vlees">
+                    <label class="form-check-label" for="vlees"> Vlees</label>
+                </div>
+            </div>
 
-        <button>Bestel</button>
-    </form>
+            <button class="btn btn-primary">Bestel</button>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
