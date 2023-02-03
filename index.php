@@ -20,8 +20,11 @@
 
                 <select name="bodemformaat" id="bodemformaat" class="form-control">
                     <option>Maak je keuze</option>
+                    <option value="20">20 cm</option>
                     <option value="25">25 cm</option>
                     <option value="30">30 cm</option>
+                    <option value="35">35 cm</option>
+                    <option value="40">40 cm</option>
                 </select>
             </div>
 
@@ -30,8 +33,11 @@
 
                 <select name="bodemformaat" id="bodemformaat" class="form-control">
                     <option>Maak je keuze</option>
-                    <option value="25">25 cm</option>
-                    <option value="30">30 cm</option>
+                    <option value="tomatensaus">Tomatensaus</option>
+                    <option value="extra-tomatensaus">Extra tomatensaus</option>
+                    <option value="spicy-tomatensaus">Spicy tomatensaus</option>
+                    <option value="bbq-saus">BBQ saus</option>
+                    <option value="creme-fraiche">Creme fraiche</option>
                 </select>
             </div>
 
